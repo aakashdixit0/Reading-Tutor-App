@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvOriginal;
     private Button btnUploadImage, btnStartReading;
     private String originalText = "";
-    private int selectedVoiceProfile = FeedbackTTS.VOICE_FEMALE; // डिफ़ॉल्ट वॉइस प्रोफाइल
+    private int selectedVoiceProfile = FeedbackTTS.VOICE_FEMALE; 
 
     private ActivityResultLauncher<String[]> permissionLauncher;
     private ActivityResultLauncher<Intent> ocrLauncher;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnUploadImage = findViewById(R.id.btnUploadImage);
         btnStartReading = findViewById(R.id.btnStartReading);
         
-        // वॉइस प्रोफाइल रेडियो बटन सेटअप
+        
         setupVoiceProfileRadioButtons();
 
         permissionLauncher = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(), result -> {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             // start speech activity/service (simple approach - start SpeechService activity)
             Intent i = new Intent(MainActivity.this, SpeechService.class);
             i.putExtra("originalText", originalText);
-            i.putExtra("voiceProfile", selectedVoiceProfile); // वॉइस प्रोफाइल पास करें
+            i.putExtra("voiceProfile", selectedVoiceProfile); 
             startActivity(i);
         });
 
@@ -92,20 +92,18 @@ public class MainActivity extends AppCompatActivity {
 
     // We've replaced onActivityResult with ActivityResultLauncher
     
-    /**
-     * वॉइस प्रोफाइल रेडियो बटन सेटअप करता है
-     */
+    
     private void setupVoiceProfileRadioButtons() {
-        // रेडियो बटन्स को फाइंड करें
+        
         android.widget.RadioGroup rgVoiceProfile = findViewById(R.id.rgVoiceProfile);
         android.widget.RadioButton rbFemaleVoice = findViewById(R.id.rbFemaleVoice);
         android.widget.RadioButton rbMaleVoice = findViewById(R.id.rbMaleVoice);
         android.widget.RadioButton rbChildVoice = findViewById(R.id.rbChildVoice);
         
-        // डिफ़ॉल्ट वॉइस प्रोफाइल सेट करें
+        
         rbFemaleVoice.setChecked(true);
         
-        // रेडियो बटन चेंज लिसनर
+        
         rgVoiceProfile.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.rbFemaleVoice) {
                 selectedVoiceProfile = FeedbackTTS.VOICE_FEMALE;
@@ -115,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 selectedVoiceProfile = FeedbackTTS.VOICE_CHILD;
             }
             
-            // स्टैटिक वॉइस प्रोफाइल भी अपडेट करें
+            
             FeedbackTTS.setStaticVoiceProfile(selectedVoiceProfile);
         });
     }

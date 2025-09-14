@@ -26,8 +26,8 @@ public class TextComparison {
         Map<String, String> wrong = new HashMap<>();
         
         if (result.hasErrors && !result.wrongWords.isEmpty()) {
-            // For backward compatibility, return the first wrong word
-            wrong.put(result.wrongWords.get(0), "गलत उच्चारण");
+            
+            wrong.put(result.wrongWords.get(0), "Wrong pronunciation");
         }
         
         return wrong;
@@ -92,7 +92,7 @@ public class TextComparison {
 
         // If spoken text is longer, mark the extra words
         if (j < spokenWords.length) {
-            result.wrongWords.add("अतिरिक्त शब्द: " + spokenWords[j]);
+            result.wrongWords.add("Extra word: " + spokenWords[j]);
             result.hasErrors = true;
             // For extra words, remaining text is from current position
             if (i < origWords.length) {
