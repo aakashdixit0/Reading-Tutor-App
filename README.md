@@ -1,72 +1,72 @@
-# रीडिंग ट्यूटर ऐप
+# Reading Tutor App
 
-यह एंड्रॉइड ऐप बच्चों को पढ़ना सिखाने में मदद करता है। यह OCR (ऑप्टिकल कैरेक्टर रिकग्निशन) का उपयोग करके छवियों से पाठ निकालता है, फिर बच्चे के पढ़े हुए पाठ को सुनता है और हिंदी में फीडबैक देता है।
+This Android app helps children practice and improve their reading skills. It uses OCR (Optical Character Recognition) to extract text from images, listens to the child’s spoken reading, and provides instant feedback in Hindi.
 
-## मुख्य विशेषताएँ
+## Key Features
 
-- **OCR**: छवियों से पाठ निकालने के लिए Google ML Kit का उपयोग
-- **स्पीच रिकग्निशन**: बच्चे के पढ़े हुए पाठ को पहचानने के लिए
-- **पाठ तुलना**: मूल पाठ और पढ़े गए पाठ की तुलना करके गलतियों की सटीक पहचान
-- **हिंदी फीडबैक**: गलत पढ़े गए शब्दों पर हिंदी में तत्काल फीडबैक
-- **निरंतर पठन**: गलत शब्द पढ़ने के बाद स्वचालित रूप से पुनः सुनना शुरू
-- **प्रेरणादायक संदेश**: बच्चों को प्रोत्साहित करने के लिए प्रेरणादायक संदेश
+- **OCR**: Extracts text from images using Google ML Kit  
+- **Speech Recognition**: Recognizes the child’s spoken reading  
+- **Text Comparison**: Compares original text with spoken text to detect mistakes accurately  
+- **Hindi Feedback**: Provides instant feedback in Hindi for mispronounced words  
+- **Continuous Reading**: Automatically resumes listening after incorrect words  
+- **Motivational Messages**: Encourages children with supportive prompts  
 
-## तकनीकी विवरण
+## Technical Details
 
-- Android 13 (API 33) के लिए अनुकूलित (Android 5.0+ पर चलता है)
-- Google ML Kit Text Recognition का उपयोग (OCR के लिए)
-- Android SpeechRecognizer और TextToSpeech का उपयोग
-- हिंदी भाषा समर्थन के साथ उन्नत पाठ तुलना एल्गोरिथम
-- स्वचालित पुनः सुनने की क्षमता
-- प्रेरणादायक संदेशों के साथ उन्नत फीडबैक प्रणाली
+- Optimized for Android 13 (API 33) but works on Android 5.0+  
+- Uses Google ML Kit Text Recognition (for OCR)  
+- Uses Android SpeechRecognizer and TextToSpeech APIs  
+- Advanced text comparison algorithm with Hindi language support  
+- Auto-resume listening capability  
+- Motivational feedback system  
 
-## समस्या निवारण
+## Troubleshooting
 
-### अनुमतियाँ
-यदि ऐप ठीक से काम नहीं कर रहा है, तो सुनिश्चित करें कि आपने निम्न अनुमतियाँ दी हैं:
-- माइक्रोफोन (आवश्यक)
-- कैमरा (आवश्यक)
-- इंटरनेट (OCR के लिए)
-- स्टोरेज (छवियों के लिए)
+### Permissions
+If the app is not working correctly, make sure you have granted:  
+- Microphone (required)  
+- Camera (required)  
+- Internet (for OCR)  
+- Storage (for images)  
 
-### OCR समस्याएँ
-- सुनिश्चित करें कि छवि स्पष्ट और पढ़ने योग्य है
-- छवि को अच्छे प्रकाश में लें
-- छवि में केवल पाठ होना चाहिए, अन्य चित्र या आकृतियाँ नहीं
+### OCR Issues
+- Ensure the image is clear and readable  
+- Take the picture in good lighting  
+- The image should contain only text (avoid graphics/shapes)  
 
-### स्पीच रिकग्निशन समस्याएँ
-- शांत वातावरण में ऐप का उपयोग करें
-- स्पष्ट और धीमी गति से बोलें
-- सुनिश्चित करें कि आपका डिवाइस हिंदी भाषा का समर्थन करता है
+### Speech Recognition Issues
+- Use the app in a quiet environment  
+- Speak clearly and slowly  
+- Ensure your device supports Hindi language  
 
-## ऐप का प्रवाह
+## App Flow
 
-1. उपयोगकर्ता एक छवि अपलोड करता है
-2. OCR छवि से पाठ निकालता है
-3. उपयोगकर्ता "पढ़ना शुरू करें" बटन पर क्लिक करता है
-4. ऐप मूल पाठ प्रदर्शित करता है
-5. उपयोगकर्ता पाठ को जोर से पढ़ता है
-6. ऐप पढ़े हुए पाठ की तुलना मूल पाठ से करता है
-7. गलत पढ़े गए शब्दों पर ऐप तुरंत हिंदी में फीडबैक देता है
-8. फीडबैक के बाद ऐप स्वचालित रूप से फिर से सुनना शुरू करता है
-9. प्रेरणादायक संदेश के साथ प्रक्रिया जारी रहती है
+1. User uploads an image  
+2. OCR extracts text from the image  
+3. User taps the “Start Reading” button  
+4. App displays the original text  
+5. User reads the text aloud  
+6. App compares spoken text with the original  
+7. App gives instant Hindi feedback on mistakes  
+8. App automatically resumes listening after feedback  
+9. Process continues with motivational prompts  
 
-## ऐप इंस्टॉल करने के लिए
+## Installation
 
-### विकल्प 1: APK से इंस्टॉल करें
-1. इस रिपॉजिटरी से `app-debug.apk` डाउनलोड करें
-2. अपने फोन पर APK फाइल पर क्लिक करके इंस्टॉल करें
-3. अज्ञात स्रोतों से इंस्टॉलेशन की अनुमति दें (यदि पूछा जाए)
+### Option 1: Install via APK
+1. Download `app-debug.apk` from this repository  
+2. Open the APK file on your phone to install  
+3. Allow installation from unknown sources if prompted  
 
-### विकल्प 2: प्रोजेक्ट बिल्ड करें
-1. इस रिपॉजिटरी को क्लोन करें
-2. `build_with_gradle.bat` या `build_apk.bat` चलाएँ
-3. `app/build/outputs/apk/debug/app-debug.apk` फाइल को अपने फोन पर कॉपी करें
-4. APK फाइल पर क्लिक करके इंस्टॉल करें
+### Option 2: Build the Project
+1. Clone this repository  
+2. Run `build_with_gradle.bat` or `build_apk.bat`  
+3. Copy the generated `app/build/outputs/apk/debug/app-debug.apk` to your phone  
+4. Install by opening the APK file  
 
-## आवश्यकताएँ
+## Requirements
 
-- Android 5.0 (API 21) या उच्चतर
-- कैमरा और माइक्रोफोन वाला डिवाइस
-- हिंदी भाषा समर्थन
-- इंटरनेट कनेक्शन (OCR के लिए)
+- Android 5.0 (API 21) or higher  
+- Device with camera and microphone  
+- Hindi language support  
+- Internet connection (for OCR)  
