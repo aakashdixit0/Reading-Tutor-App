@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button android:id="@+id/btnUploadImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Upload Image / Pick Page"/>
+    <TextView android:id="@+id/tvOriginal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Original extracted text will appear here" android:paddingTop="12dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select voice profile"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+        
+    <RadioGroup
+        android:id="@+id/rgVoiceProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <RadioButton
+            android:id="@+id/rbFemaleVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female voice"
+            android:checked="true"/>
+            
+        <RadioButton
+            android:id="@+id/rbMaleVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male voice"/>
+            
+        <RadioButton
+            android:id="@+id/rbChildVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="child voice"/>
+    </RadioGroup>
+    
+    <Button android:id="@+id/btnStartReading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Start Reading" android:layout_marginTop="16dp"/>
+</LinearLayout>

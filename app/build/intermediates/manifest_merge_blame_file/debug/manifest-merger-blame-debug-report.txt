@@ -1,0 +1,200 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.readingtutor"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:4:5-71
+11-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:4:22-68
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:5:5-65
+12-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:5:22-62
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:6:5-67
+13-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:6:22-64
+14    <uses-permission
+14-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:7:5-107
+15        android:name="android.permission.READ_EXTERNAL_STORAGE"
+15-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:7:22-77
+16        android:maxSdkVersion="32" />
+16-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:7:78-104
+17    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+17-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:8:5-76
+17-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:8:22-73
+18
+19    <permission
+19-->[androidx.core:core:1.9.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\6a17f8a5a708216ae1ec9d81e4667c7a\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.readingtutor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.9.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\6a17f8a5a708216ae1ec9d81e4667c7a\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.9.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\6a17f8a5a708216ae1ec9d81e4667c7a\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.readingtutor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+23-->[androidx.core:core:1.9.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\6a17f8a5a708216ae1ec9d81e4667c7a\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.9.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\6a17f8a5a708216ae1ec9d81e4667c7a\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+24    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+25-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+26
+27    <application
+27-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:10:5-24:19
+28        android:allowBackup="true"
+28-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:11:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.9.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\6a17f8a5a708216ae1ec9d81e4667c7a\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:13:9-43
+32        android:label="ReadingTutor"
+32-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:12:9-37
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:14:9-54
+34        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+34-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:15:9-65
+35        <activity
+35-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:16:9-74
+36            android:name="com.example.readingtutor.OcrActivity"
+36-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:16:19-46
+37            android:exported="false" />
+37-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:16:47-71
+38        <activity
+38-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:17:9-76
+39            android:name="com.example.readingtutor.SpeechService"
+39-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:17:19-48
+40            android:exported="false" />
+40-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:17:49-73
+41        <activity
+41-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:18:9-23:20
+42            android:name="com.example.readingtutor.MainActivity"
+42-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:18:19-47
+43            android:exported="true" >
+43-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:18:48-71
+44            <intent-filter>
+44-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:19:13-22:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:20:17-69
+45-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:20:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:21:17-77
+47-->C:\Users\lenovo\Downloads\ReadingTutorApp\app\src\main\AndroidManifest.xml:21:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <service
+51-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\250ba1baaa3a2e4319649774401f0228\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19
+52            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+52-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\250ba1baaa3a2e4319649774401f0228\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:10:13-91
+53            android:directBootAware="true"
+53-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:17:13-43
+54            android:exported="false" >
+54-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\250ba1baaa3a2e4319649774401f0228\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:11:13-37
+55            <meta-data
+55-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\250ba1baaa3a2e4319649774401f0228\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
+56                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+56-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\250ba1baaa3a2e4319649774401f0228\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\250ba1baaa3a2e4319649774401f0228\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
+58            <meta-data
+58-->[com.google.mlkit:vision-common:17.3.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\254e60cf8e16ddb66730bb710c120ad8\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+59                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+59-->[com.google.mlkit:vision-common:17.3.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\254e60cf8e16ddb66730bb710c120ad8\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.mlkit:vision-common:17.3.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\254e60cf8e16ddb66730bb710c120ad8\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+61            <meta-data
+61-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:20:13-22:85
+62                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+62-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:21:17-120
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:22:17-82
+64        </service>
+65
+66        <provider
+66-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:9:9-13:38
+67            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+67-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:10:13-78
+68            android:authorities="com.example.readingtutor.mlkitinitprovider"
+68-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:11:13-69
+69            android:exported="false"
+69-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:12:13-37
+70            android:initOrder="99" />
+70-->[com.google.mlkit:common:18.8.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\9c6c10f136e8327c24a294876b4bcd04\transformed\jetified-common-18.8.0\AndroidManifest.xml:13:13-35
+71
+72        <activity
+72-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\b22a9afb2e51d8636d7deb9e2b2ce70d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+73            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+73-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\b22a9afb2e51d8636d7deb9e2b2ce70d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+74            android:exported="false"
+74-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\b22a9afb2e51d8636d7deb9e2b2ce70d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+75            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+75-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\b22a9afb2e51d8636d7deb9e2b2ce70d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+76
+77        <meta-data
+77-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\45c9e9819dcbb0a5c375fa08c89c0f25\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+78            android:name="com.google.android.gms.version"
+78-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\45c9e9819dcbb0a5c375fa08c89c0f25\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+79            android:value="@integer/google_play_services_version" />
+79-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\45c9e9819dcbb0a5c375fa08c89c0f25\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+80
+81        <provider
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+82            android:name="androidx.startup.InitializationProvider"
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+83            android:authorities="com.example.readingtutor.androidx-startup"
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+84            android:exported="false" >
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+85            <meta-data
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+86                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+87                android:value="androidx.startup" />
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\108ecdb4024f2a506df83adaa4003761\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+88            <meta-data
+88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\477385660a5337da0f5cf66066c34b1a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+89-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\477385660a5337da0f5cf66066c34b1a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+90                android:value="androidx.startup" />
+90-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\477385660a5337da0f5cf66066c34b1a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+91        </provider>
+92
+93        <service
+93-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+94            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+94-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+95            android:exported="false" >
+95-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+96            <meta-data
+96-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+97                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+97-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+98                android:value="cct" />
+98-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\679243351c6e1a3b3faa3bd869683375\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+99        </service>
+100        <service
+100-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+101            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+101-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+102            android:exported="false"
+102-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+103            android:permission="android.permission.BIND_JOB_SERVICE" >
+103-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+104        </service>
+105
+106        <receiver
+106-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+107            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+107-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+108            android:exported="false" />
+108-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\8.14.3\transforms\e5e8d6aaaad2f5a55b3b71d09c49d045\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+109    </application>
+110
+111</manifest>

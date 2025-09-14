@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="full para"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+        
+    <TextView 
+        android:id="@+id/tvOriginal" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#E8F5E9"
+        android:textSize="16sp"
+        android:minHeight="100dp"
+        android:text="The original text will appear here"/>
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your read text"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+        
+    <TextView 
+        android:id="@+id/tvSpoken" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#E3F2FD"
+        android:textSize="16sp"
+        android:minHeight="100dp"
+        android:text="Your read text will appear here!"/>
+        
+    <Button 
+        android:id="@+id/btnStartStt" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:text="Start reading"/>
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="if you read it wrong i'll tell you"
+        android:textStyle="italic"/>
+        
+    <TextView
+        android:id="@+id/tvWrongWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</LinearLayout>

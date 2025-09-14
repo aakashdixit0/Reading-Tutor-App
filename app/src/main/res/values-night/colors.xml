@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Colors -->
+    <color name="colorPrimary">#81C784</color>
+    <color name="colorPrimaryDark">#2E7D32</color>
+    <color name="colorAccent">#AED581</color>
+    
+    <color name="backgroundColor">#121212</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#B3FFFFFF</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="cardBackground">#1E1E1E</color>
+    <color name="dividerColor">#424242</color>
+</resources>
