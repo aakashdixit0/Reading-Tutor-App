@@ -1,71 +1,78 @@
-# Reading Tutor App - निर्देश
+# Reading Tutor App - Instructions
 
-## अपने फोन पर ऐप चलाने के लिए निर्देश
+## How to Run the App on Your Phone
 
-### विकल्प 1: Android Studio का उपयोग करके
+### Option 1: Using Android Studio
 
-1. Android Studio खोलें
-2. "Open an existing project" पर क्लिक करें
-3. `ReadingTutorApp` फोल्डर चुनें
-4. प्रोजेक्ट लोड होने के बाद, अपने फोन को USB से कनेक्ट करें
-5. अपने फोन पर USB डिबगिंग सक्षम करें (Settings > Developer options > USB debugging)
-6. Android Studio में, ऊपर दाईं ओर "Run" बटन पर क्लिक करें
-7. अपना फोन डिवाइस के रूप में चुनें
-8. ऐप आपके फोन पर इंस्टॉल और लॉन्च हो जाएगा
+1. Open Android Studio  
+2. Click on "Open an existing project"  
+3. Select the `ReadingTutorApp` folder  
+4. Once the project loads, connect your phone via USB  
+5. Enable USB debugging on your phone (Settings > Developer options > USB debugging)  
+6. In Android Studio, click the "Run" button at the top-right  
+7. Select your phone as the target device  
+8. The app will be installed and launched on your phone  
 
-### विकल्प 2: बिल्ड स्क्रिप्ट का उपयोग करके (Android Studio के बिना)
+### Option 2: Using Build Scripts (without Android Studio)
 
-1. इस प्रोजेक्ट फोल्डर को अपने कंप्यूटर पर डाउनलोड करें
-2. निम्न में से किसी एक स्क्रिप्ट का उपयोग करके APK बनाएं:
-   - **build_with_gradle.bat**: यदि आपके पास Gradle इंस्टॉल है या इंटरनेट कनेक्शन है
-     - फोल्डर में डबल-क्लिक करके या कमांड प्रॉम्प्ट से `build_with_gradle.bat` चलाएं
-   - **build_apk.bat**: यदि आपके पास Android SDK और Java JDK इंस्टॉल है
-     - फोल्डर में डबल-क्लिक करके या कमांड प्रॉम्प्ट से `build_apk.bat` चलाएं
-3. बिल्ड पूरा होने के बाद, APK फाइल यहां मिलेगी: `app\build\outputs\apk\debug\app-debug.apk`
-4. APK फाइल को अपने फोन पर कॉपी करें (ईमेल, WhatsApp, या USB के माध्यम से)
-5. अपने फोन पर APK फाइल पर टैप करके इंस्टॉल करें
-6. इंस्टॉलेशन के बाद ऐप खोलें
+1. Download this project folder onto your computer  
+2. Use one of the scripts to build the APK:  
+   - **build_with_gradle.bat**: Use this if you have Gradle installed or an internet connection  
+     - Double-click in the folder or run `build_with_gradle.bat` from command prompt  
+   - **build_apk.bat**: Use this if you have Android SDK and Java JDK installed  
+     - Double-click in the folder or run `build_apk.bat` from command prompt  
+3. After the build finishes, the APK will be located at:  
+   `app\build\outputs\apk\debug\app-debug.apk`  
+4. Copy the APK file to your phone (via email, WhatsApp, or USB)  
+5. Tap the APK file on your phone to install  
+6. Open the app after installation  
 
-### विकल्प 3: पहले से बनी APK फाइल का उपयोग करके
+### Option 3: Using Pre-Built APK
 
-1. Android Studio खोलें
-2. "Open an existing project" पर क्लिक करें
-3. `ReadingTutorApp` फोल्डर चुनें
-4. प्रोजेक्ट लोड होने के बाद, मेनू से "Build > Build Bundle(s) / APK(s) > Build APK(s)" चुनें
-5. बिल्ड पूरा होने के बाद, "locate" लिंक पर क्लिक करें
-6. APK फाइल को अपने फोन पर कॉपी करें (ईमेल, WhatsApp, या USB के माध्यम से)
-7. अपने फोन पर APK फाइल पर टैप करके इंस्टॉल करें
-8. इंस्टॉलेशन के बाद ऐप खोलें
+1. Open Android Studio  
+2. Click on "Open an existing project"  
+3. Select the `ReadingTutorApp` folder  
+4. Once loaded, go to the menu: **Build > Build Bundle(s) / APK(s) > Build APK(s)**  
+5. After the build completes, click "locate" to find the APK  
+6. Copy the APK to your phone (via email, WhatsApp, or USB)  
+7. Tap the APK file on your phone to install  
+8. Open the app after installation  
 
-## ऐप का उपयोग कैसे करें
+---
 
-1. ऐप खोलें
-2. "Upload Image / Pick Page" बटन पर टैप करें
-3. अपनी गैलरी से एक पाठ वाली छवि चुनें
-4. OCR प्रोसेसिंग के बाद, पाठ स्क्रीन पर दिखाई देगा
-5. "Start Reading" बटन पर टैप करें
-6. पाठ को जोर से पढ़ें
-7. ऐप आपके पढ़े हुए पाठ की तुलना मूल पाठ से करेगा और हिंदी में फीडबैक देगा
+## How to Use the App
 
-## समस्या निवारण
+1. Open the app  
+2. Tap "Upload Image / Pick Page" button  
+3. Choose a text-containing image from your gallery  
+4. After OCR processing, the extracted text will be displayed  
+5. Tap the "Start Reading" button  
+6. Read the text aloud  
+7. The app will compare your spoken text with the original and give feedback in Hindi  
 
-### ऐप संबंधित समस्याएं
-- यदि ऐप क्रैश होता है, तो सुनिश्चित करें कि आपने सभी आवश्यक अनुमतियां दी हैं (माइक्रोफोन, कैमरा, स्टोरेज)
-- यदि OCR सही से काम नहीं करता, तो अच्छी रोशनी वाली और स्पष्ट छवि का उपयोग करें
-- यदि स्पीच रिकग्निशन काम नहीं करता, तो सुनिश्चित करें कि आपका फोन हिंदी भाषा का समर्थन करता है
+---
 
-### बिल्ड स्क्रिप्ट संबंधित समस्याएं
-- **build_with_gradle.bat** के साथ समस्याएं:
-  - यदि Gradle नहीं मिलता है, तो स्क्रिप्ट स्वयं Gradle डाउनलोड करने का प्रयास करेगी
-  - यदि इंटरनेट कनेक्शन नहीं है, तो `build_apk.bat` का उपयोग करें
-  - यदि कंपाइलेशन एरर आते हैं, तो Android Studio का उपयोग करके समस्या का पता लगाएं
+## Troubleshooting
 
-- **build_apk.bat** के साथ समस्याएं:
-  - यदि "Android SDK build tools not found" एरर आता है, तो:
-    - Android SDK इंस्टॉल करें (Android Studio के माध्यम से)
-    - या `build_with_gradle.bat` का उपयोग करें
-  - यदि "Java JDK not found" एरर आता है, तो Java JDK इंस्टॉल करें और JAVA_HOME एन्वायरनमेंट वेरिएबल सेट करें
+### App Issues
+- If the app crashes, make sure all required permissions are granted (microphone, camera, storage)  
+- If OCR does not work well, use a clear, well-lit image  
+- If speech recognition fails, ensure your phone supports the Hindi language  
 
-- **APK इंस्टॉलेशन समस्याएं**:
-  - यदि "App not installed" एरर आता है, तो अपने फोन पर "Unknown sources" से ऐप इंस्टॉल करने की अनुमति दें (Settings > Security > Unknown sources)
-  - यदि पहले से ऐप इंस्टॉल है, तो पहले उसे अनइंस्टॉल करें और फिर नया APK इंस्टॉल करें
+### Build Script Issues
+- **Problems with `build_with_gradle.bat`:**  
+  - If Gradle is not found, the script will try to download it automatically  
+  - If you don’t have internet, use `build_apk.bat` instead  
+  - If compilation errors occur, open the project in Android Studio to debug  
+
+- **Problems with `build_apk.bat`:**  
+  - If you see "Android SDK build tools not found":  
+    - Install Android SDK (via Android Studio)  
+    - Or use `build_with_gradle.bat`  
+  - If you see "Java JDK not found":  
+    - Install Java JDK and set the JAVA_HOME environment variable  
+
+- **APK Installation Issues:**  
+  - If "App not installed" error appears:  
+    - Enable "Install from Unknown Sources" on your phone (Settings > Security > Unknown sources)  
+    - If an older version is already installed, uninstall it first and then install the new APK  
