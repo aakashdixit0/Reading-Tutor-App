@@ -1,78 +1,93 @@
-# Reading Tutor App - Instructions
+# How to Run - Face Distance Blur App
 
-## How to Run the App on Your Phone
+This guide explains how to build, install, and run the Face Distance Blur App on your Android device.
 
-### Option 1: Using Android Studio
+## Prerequisites
+- Android Studio (Arctic Fox or newer recommended)
+- Java Development Kit (JDK 17 or higher)
+- Android device (API Level 24+ / Android 7.0 or higher) or emulator
+- USB Debugging enabled on device (if installing via USB)
 
-1. Open Android Studio  
-2. Click on "Open an existing project"  
-3. Select the `ReadingTutorApp` folder  
-4. Once the project loads, connect your phone via USB  
-5. Enable USB debugging on your phone (Settings > Developer options > USB debugging)  
-6. In Android Studio, click the "Run" button at the top-right  
-7. Select your phone as the target device  
-8. The app will be installed and launched on your phone  
+## Steps to Run
 
-### Option 2: Using Build Scripts (without Android Studio)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/aakashdixit0/Face-Distance-Blur-App.git
+cd Face-Distance-Blur-App
 
-1. Download this project folder onto your computer  
-2. Use one of the scripts to build the APK:  
-   - **build_with_gradle.bat**: Use this if you have Gradle installed or an internet connection  
-     - Double-click in the folder or run `build_with_gradle.bat` from command prompt  
-   - **build_apk.bat**: Use this if you have Android SDK and Java JDK installed  
-     - Double-click in the folder or run `build_apk.bat` from command prompt  
-3. After the build finishes, the APK will be located at:  
-   `app\build\outputs\apk\debug\app-debug.apk`  
-4. Copy the APK file to your phone (via email, WhatsApp, or USB)  
-5. Tap the APK file on your phone to install  
-6. Open the app after installation  
 
-### Option 3: Using Pre-Built APK
+2. Open in Android Studio
+Launch Android Studio
 
-1. Open Android Studio  
-2. Click on "Open an existing project"  
-3. Select the `ReadingTutorApp` folder  
-4. Once loaded, go to the menu: **Build > Build Bundle(s) / APK(s) > Build APK(s)**  
-5. After the build completes, click "locate" to find the APK  
-6. Copy the APK to your phone (via email, WhatsApp, or USB)  
-7. Tap the APK file on your phone to install  
-8. Open the app after installation  
+Select Open an existing project
 
----
+Choose the Face-Distance-Blur-App folder
 
-## How to Use the App
+Let Gradle sync and finish setup
 
-1. Open the app  
-2. Tap "Upload Image / Pick Page" button  
-3. Choose a text-containing image from your gallery  
-4. After OCR processing, the extracted text will be displayed  
-5. Tap the "Start Reading" button  
-6. Read the text aloud  
-7. The app will compare your spoken text with the original and give feedback in Hindi  
 
----
+3. Build the APK
+You can build the project in two ways:
 
-## Troubleshooting
+Using Gradle from terminal:
 
-### App Issues
-- If the app crashes, make sure all required permissions are granted (microphone, camera, storage)  
-- If OCR does not work well, use a clear, well-lit image  
-- If speech recognition fails, ensure your phone supports the Hindi language  
+bash
+Copy code
+./gradlew assembleDebug
+Using Android Studio:
 
-### Build Script Issues
-- **Problems with `build_with_gradle.bat`:**  
-  - If Gradle is not found, the script will try to download it automatically  
-  - If you don’t have internet, use `build_apk.bat` instead  
-  - If compilation errors occur, open the project in Android Studio to debug  
+Go to Build > Build Bundle(s)/APK(s) > Build APK(s)
 
-- **Problems with `build_apk.bat`:**  
-  - If you see "Android SDK build tools not found":  
-    - Install Android SDK (via Android Studio)  
-    - Or use `build_with_gradle.bat`  
-  - If you see "Java JDK not found":  
-    - Install Java JDK and set the JAVA_HOME environment variable  
+Wait for the build to finish
 
-- **APK Installation Issues:**  
-  - If "App not installed" error appears:  
-    - Enable "Install from Unknown Sources" on your phone (Settings > Security > Unknown sources)  
-    - If an older version is already installed, uninstall it first and then install the new APK  
+The APK will be located at:
+
+Copy code
+app/build/outputs/apk/debug/app-debug.apk
+
+
+4. Install the APK
+On a physical device (with USB Debugging enabled):
+
+bash
+Copy code
+adb install app/build/outputs/apk/debug/app-debug.apk
+Or manually: Transfer the APK to your phone and install it
+
+
+5. Grant Required Permissions
+When you open the app for the first time:
+
+Allow Camera permission
+
+Enable Overlay permission (Settings → Apps → Special Access → Draw over other apps)
+
+Enable Accessibility Service (Settings → Accessibility → Installed Services → Face Distance Blur App)
+
+
+6. Start Monitoring
+Open the app
+
+Tap Start Face Distance Monitoring
+
+If your face comes too close, the screen will automatically blur
+
+Tap Stop Face Distance Monitoring to disable the service
+
+Troubleshooting
+Camera not working → Check Camera permission
+
+Blur not appearing → Enable Overlay permission
+
+Service not starting → Enable Accessibility Service
+
+App crashes → Ensure all permissions are granted
+
+Notes
+Minimum SDK: 24 (Android 7.0)
+
+Target SDK: 36 (Android 14)
+
+Language: Java
+
+Privacy: All processing is done locally on the device, no data is uploaded
