@@ -1,95 +1,72 @@
-# Face Distance Blur App
+# Reading Tutor App
 
-An Android application designed to enhance eye health and screen safety by automatically blurring the screen when the user's face is too close to the device.
+This Android app helps children practice and improve their reading skills. It uses OCR (Optical Character Recognition) to extract text from images, listens to the child’s spoken reading, and provides instant feedback in Hindi.
 
-## Features
+## Key Features
 
-- **Real-time Face Detection**: Uses Google ML Kit's face detection to continuously monitor the distance between the user's face and the phone
-- **Automatic Blur Overlay**: Applies a blur overlay when the user is too close to the screen
-- **Accessibility Service**: Runs in the background to monitor face distance across all apps
-- **Privacy-First**: All processing is done locally on the device
-- **User-Friendly Interface**: Simple controls to start/stop the monitoring service
-
-## How It Works
-
-1. **Camera Monitoring**: The app uses the front camera to continuously capture images
-2. **Face Detection**: Google ML Kit analyzes each frame to detect faces
-3. **Distance Calculation**: The app calculates the face size ratio to determine proximity
-4. **Blur Trigger**: When the face is detected too close (above threshold), a blur overlay is applied
-5. **Auto-Recovery**: The blur is automatically removed when the user moves to a safe distance
-
-## Permissions Required
-
-- **Camera**: Required for face detection
-- **Overlay Permission**: Required to display blur overlay on other apps
-- **Accessibility Service**: Required to run the monitoring service in the background
-
-## Installation
-
-1. Build the project using Android Studio or Gradle:
-   ```bash
-   ./gradlew assembleDebug
-   ```
-
-2. Install the APK on your Android device
-
-3. Grant the required permissions:
-   - Camera permission when prompted
-   - Overlay permission in Settings
-   - Accessibility service permission in Settings
-
-## Usage
-
-1. Open the app
-2. Grant all required permissions when prompted
-3. Tap "Start Face Distance Monitoring" to begin
-4. The service will run in the background and automatically blur the screen when you're too close
-5. Tap "Stop Face Distance Monitoring" to stop the service
+- **OCR**: Extracts text from images using Google ML Kit  
+- **Speech Recognition**: Recognizes the child’s spoken reading  
+- **Text Comparison**: Compares original text with spoken text to detect mistakes accurately  
+- **Hindi Feedback**: Provides instant feedback in Hindi for mispronounced words  
+- **Continuous Reading**: Automatically resumes listening after incorrect words  
+- **Motivational Messages**: Encourages children with supportive prompts  
 
 ## Technical Details
 
-- **Minimum SDK**: 24 (Android 7.0)
-- **Target SDK**: 36 (Android 14)
-- **Language**: Java
-- **Architecture**: Uses Accessibility Service for background operation
-- **Dependencies**:
-  - CameraX for camera operations
-  - ML Kit Face Detection for face recognition
-  - AndroidX components for modern Android development
-
-## Safety Features
-
-- **Local Processing**: All face detection is done on-device for privacy
-- **Battery Optimization**: Efficient face detection with minimal battery impact
-- **Error Handling**: Graceful handling of camera and permission errors
-- **Service Lifecycle**: Proper service management to prevent memory leaks
-
-## Customization
-
-You can adjust the sensitivity by modifying the `SAFE_DISTANCE_THRESHOLD` constant in `BlurAccessibilityService.java`:
-
-```java
-private static final float SAFE_DISTANCE_THRESHOLD = 0.6f; // Adjust this value
-```
-
-- Lower values (e.g., 0.4f) = More sensitive (blur triggers when closer)
-- Higher values (e.g., 0.8f) = Less sensitive (blur triggers when further away)
+- Optimized for Android 13 (API 33) but works on Android 5.0+  
+- Uses Google ML Kit Text Recognition (for OCR)  
+- Uses Android SpeechRecognizer and TextToSpeech APIs  
+- Advanced text comparison algorithm with Hindi language support  
+- Auto-resume listening capability  
+- Motivational feedback system  
 
 ## Troubleshooting
 
-- **Camera not working**: Ensure camera permission is granted
-- **Blur not appearing**: Check overlay permission in Settings
-- **Service not starting**: Verify accessibility service is enabled
-- **App crashes**: Check that all permissions are properly granted
+### Permissions
+If the app is not working correctly, make sure you have granted:  
+- Microphone (required)  
+- Camera (required)  
+- Internet (for OCR)  
+- Storage (for images)  
 
-## Privacy
+### OCR Issues
+- Ensure the image is clear and readable  
+- Take the picture in good lighting  
+- The image should contain only text (avoid graphics/shapes)  
 
-This app respects your privacy:
-- No data is sent to external servers
-- All face detection processing happens locally
-- No personal information is collected or stored
-- Camera access is only used for face detection
+### Speech Recognition Issues
+- Use the app in a quiet environment  
+- Speak clearly and slowly  
+- Ensure your device supports Hindi language  
 
-## Contributing
+## App Flow
 
-Feel free to submit issues and enhancement requests!
+1. User uploads an image  
+2. OCR extracts text from the image  
+3. User taps the “Start Reading” button  
+4. App displays the original text  
+5. User reads the text aloud  
+6. App compares spoken text with the original  
+7. App gives instant Hindi feedback on mistakes  
+8. App automatically resumes listening after feedback  
+9. Process continues with motivational prompts  
+
+## Installation
+
+### Option 1: Install via APK
+1. Download `app-debug.apk` from this repository  
+2. Open the APK file on your phone to install  
+3. Allow installation from unknown sources if prompted  
+
+### Option 2: Build the Project
+1. Clone this repository  
+2. Run `build_with_gradle.bat` or `build_apk.bat`  
+3. Copy the generated `app/build/outputs/apk/debug/app-debug.apk` to your phone  
+4. Install by opening the APK file  
+
+## Requirements
+
+- Android 5.0 (API 21) or higher  
+- Device with camera and microphone  
+- Hindi language support  
+- Internet connection (for OCR)
